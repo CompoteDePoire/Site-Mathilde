@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1a191c;
+    color: #f5f2f4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lettre {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.titre {
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.texte {
+    font-family: "Caveat", cursive;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: left;
+    background-color: #f4dce830;
+    border-radius: 25px;
+    padding: 50px;
+}
+
+.final {
+    margin-top: 60px;
+    margin-left: auto;
+    text-align: right;
+    font-family: "Caveat", cursive;
+    font-size: 1.4rem;
+    background-color: #f4dce830;
+    border-radius: 25px;
+    padding: 50px;
+    width: 350px;
+}
+
+.debut{
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.photo {
+    position: absolute;
+    display: block;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.photos:hover{
+    transform: scale(1.05) rotate(0deg);
+}
+
+.photo1 {
+    top: 250px;
+    left: -200px;
+    transform: rotate(-15deg);
+}
+
+.photo2 {
+    top: 600px;
+    right: -200px;
+    transform: rotate(15deg);
+}
+
+.photo3 {
+    top: 1000px;
+    left: -280px;
+    width: 250px;
+    transform: rotate(-10deg);
+}
+
+.photo4 {
+    top: 1400px;
+    right: -280Px;
+    width: 250px;
+    transform: rotate(10deg);
+}
+
+.photo1:hover {
+    transform: scale(1.05) rotate(-15deg);
+}
+
+.photo2:hover {
+    transform: scale(1.05) rotate(15deg);
+}
+
+.photo3:hover {
+    transform: scale(1.05) rotate(-10deg);
+}
+
+.photo4:hover {
+    transform: scale(1.05) rotate(10deg);
+}
+
+body {
+    animation: apparitionLettre 1.2s ease;
+}
+
+@keyframes apparitionLettre {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#1a191c;
+    color:#2d2d2d;
+    font-family:Arial, sans-serif;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+body.page-transition {
+    opacity: 0 !important;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.titre-accueil{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    top: -350px;
+}
+
+.sous-titre {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white;
+    margin-top: 20px;
+    position: relative;
+    top: 200px;
+}
+
+.moments{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 25px;
+    color: white;
+    top: 200px;
+}
+
+.accueil {
+    min-height: 100vh;
+
+    background-image: url("../assets/images/accueil1.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+
+    animation: apparition 1.2s ease;
+}
+
+.accueil::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.accueil > * {
+    position: relative;
+    z-index: 1;
+}
+
+.bouton-accueil {
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+    top: 200px;
+}
+
+.bouton-accueil:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.ref {
+    position: absolute;
+    height: 300px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.ref:hover {
+    transform: scale(1.05);
+    filter: brightness(1.08);
+}
+
+.ref-repo1 {
+    top: 10px;
+    left: 20px;
+}
+
+.ref-repo2 {
+    top: 10px;
+    left: 260px;
+    margin-left: 25px;
+}
+
+.ref-rell {
+    left: 20px;
+}
+
+.ref-mf {
+    bottom: 10px;
+    left: 20px;
+}
+
+.ref-susu{
+    top: 10px;
+    right: 20px;
+}
+
+.ref-chateau{
+    right: 20px;
+}
+
+.ref-voyage{
+    bottom: 10px;
+    right: 20px;
+    width: 532px;
+}
+
+.ref-iris{
+    top: 10px;
+    right: 352px;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
