@@ -177,18 +177,18 @@ img{
     .sous-titre {
         font-size: 1.4rem;
         margin-top: 10px;
-        top: 60px;
+        top: 120px;
         padding: 0 40px;
     }
 
     .moments {
         font-size: 1rem;
         padding: 40px;
-        top: 60px;
+        top: 120px;
     }
 
     .bouton-accueil {
-        top: 60px;
+        top: 120px;
         padding: 12px 18px;
     }
 
@@ -198,12 +198,12 @@ img{
     }
 
     .ref-repo1 {
-        top: 100px;
+        top: 150px;
         left: 10px;
     }
 
     .ref-repo2 {
-        top: 100px;
+        top: 150px;
         left: 80px;
         margin-left: 0;
     }
@@ -218,7 +218,7 @@ img{
     }
 
     .ref-susu {
-        top: 100px;
+        top: 150px;
         right: 10px;
     }
 
@@ -232,7 +232,7 @@ img{
     }
 
     .ref-iris {
-        top: 100px;
+        top: 150px;
         right: 80px;
     }
 }
