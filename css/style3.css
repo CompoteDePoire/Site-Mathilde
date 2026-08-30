@@ -151,7 +151,8 @@ body {
 @media (max-width: 600px) {
 
     .photo{
-        height: 100px;
+        height: 250px;
         width: auto;
+        margin: 0;
     }
 }
