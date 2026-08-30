@@ -177,7 +177,7 @@ img{
     .sous-titre {
         font-size: 1.4rem;
         margin-top: 10px;
-        top: 120px;
+        top: 140px;
         padding: 0 40px;
     }
 
@@ -198,14 +198,13 @@ img{
     }
 
     .ref-repo1 {
-        top: 150px;
+        top: 200px;
         left: 10px;
     }
 
     .ref-repo2 {
-        top: 150px;
+        top: 200px;
         left: 80px;
-        margin-left: 0;
     }
 
     .ref-rell {
@@ -218,7 +217,7 @@ img{
     }
 
     .ref-susu {
-        top: 150px;
+        top: 200px;
         right: 10px;
     }
 
@@ -232,7 +231,7 @@ img{
     }
 
     .ref-iris {
-        top: 150px;
+        top: 200px;
         right: 80px;
     }
 }
