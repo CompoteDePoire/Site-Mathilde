@@ -170,20 +170,20 @@ img{
     }
 
     .titre-accueil {
-        font-size: 3rem;
-        top: -180px;
+        font-size: 2.2rem;
+        top: -200px;
     }
 
     .sous-titre {
         font-size: 1.4rem;
         margin-top: 10px;
         top: 80px;
-        padding: 0 20px;
+        padding: 0 40px;
     }
 
     .moments {
-        font-size: 1.1rem;
-        padding: 20px;
+        font-size: 1rem;
+        padding: 40px;
         top: 80px;
     }
 
@@ -193,7 +193,8 @@ img{
     }
 
     .ref {
-        height: 150px;
+        height: 100px;
+        width: auto;
     }
 
     .ref-repo1 {
@@ -203,7 +204,7 @@ img{
 
     .ref-repo2 {
         top: 10px;
-        left: 170px;
+        left: auto;
         margin-left: 0;
     }
 
