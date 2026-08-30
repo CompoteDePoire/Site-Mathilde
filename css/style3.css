@@ -147,3 +147,11 @@ body {
         transform: translateY(0);
     }
 }
+
+@media (max-width: 600px) {
+
+    .photo{
+        height: 100px;
+        max-width: auto;
+    }
+}
