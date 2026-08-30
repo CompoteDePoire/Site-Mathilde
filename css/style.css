@@ -160,3 +160,79 @@ img{
         transform: translateY(0);
     }
 }
+
+@media (max-width: 600px) {
+
+    .accueil {
+        min-height: 100vh;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .titre-accueil {
+        font-size: 3rem;
+        top: -180px;
+    }
+
+    .sous-titre {
+        font-size: 1.4rem;
+        margin-top: 10px;
+        top: 80px;
+        padding: 0 20px;
+    }
+
+    .moments {
+        font-size: 1.1rem;
+        padding: 20px;
+        top: 80px;
+    }
+
+    .bouton-accueil {
+        top: 80px;
+        padding: 12px 18px;
+    }
+
+    .ref {
+        height: 150px;
+    }
+
+    .ref-repo1 {
+        top: 10px;
+        left: 10px;
+    }
+
+    .ref-repo2 {
+        top: 10px;
+        left: 170px;
+        margin-left: 0;
+    }
+
+    .ref-rell {
+        left: 10px;
+    }
+
+    .ref-mf {
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .ref-susu {
+        top: 10px;
+        right: 10px;
+    }
+
+    .ref-chateau {
+        right: 10px;
+    }
+
+    .ref-voyage {
+        bottom: 10px;
+        right: 10px;
+        width: 260px;
+    }
+
+    .ref-iris {
+        top: 10px;
+        right: 180px;
+    }
+}

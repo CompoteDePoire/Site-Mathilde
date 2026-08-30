@@ -67,45 +67,69 @@ body {
 }
 
 .photo1 {
-    top: 250px;
+    top: 350px;
     left: -200px;
-    transform: rotate(-15deg);
+    width: 180px;
+    transform: rotate(-10deg);
 }
 
 .photo2 {
-    top: 600px;
+    top: 700px;
     right: -200px;
-    transform: rotate(15deg);
+    width: 180px;
+    transform: rotate(10deg);
 }
 
 .photo3 {
-    top: 1000px;
+    top: 1050px;
     left: -280px;
-    width: 250px;
+    width: 280px;
     transform: rotate(-10deg);
 }
 
 .photo4 {
     top: 1400px;
     right: -280Px;
+    width: 280px;
+    transform: rotate(10deg);
+}
+
+.photo5 {
+    top: 1750px;
+    left: -280Px;
     width: 250px;
+    transform: rotate(-10deg);
+}
+
+.photo6 {
+    top: 2100px;
+    right: -280Px;
+    width: 220px;
     transform: rotate(10deg);
 }
 
 .photo1:hover {
-    transform: scale(1.05) rotate(-15deg);
+    transform: scale(1.05) rotate(-0deg);
 }
 
 .photo2:hover {
-    transform: scale(1.05) rotate(15deg);
+    transform: scale(1.05) rotate(0deg);
 }
 
 .photo3:hover {
-    transform: scale(1.05) rotate(-10deg);
+    transform: scale(1.05) rotate(-0deg);
 }
 
 .photo4:hover {
-    transform: scale(1.05) rotate(10deg);
+    transform: scale(1.05) rotate(0deg);
+}
+
+.photo5:hover {
+    transform: scale(1.05) rotate(-0deg);
+}
+
+.photo6:hover {
+    transform: scale(1.05) rotate(0deg);
 }
 
 body {
