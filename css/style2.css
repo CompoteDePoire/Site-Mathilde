@@ -47,6 +47,16 @@ body{
         background-color: rgba(17, 17, 17, 0.75);
         z-index: 1000;
     }
+    .souvenir-media {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .souvenir-media img {
+        max-width: 200px;
+        max-height: auto;
+    }
 }
 
 .histoire{
