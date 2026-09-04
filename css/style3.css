@@ -158,6 +158,7 @@ body {
 
     .titre{
         font-size: 2rem;
+        color: aqua;
     }
 
     .texte{
@@ -170,7 +171,7 @@ body {
     }
 
     .lettre {
-        max-width: 400px;
+        max-width: 350px;
     }
 
     .photo1 {
