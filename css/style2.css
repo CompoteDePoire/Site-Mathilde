@@ -54,7 +54,7 @@ body{
     }
 
     .souvenir-media img {
-        height: 250px;
+        height: 200px;
         width: auto;
     }
 }
@@ -176,7 +176,7 @@ body{
     text-decoration: none;
     transition: 0.3s;
     font-size: 1.2rem;
-    margin: 30px auto 150px;
+    margin: 15px auto 200px;
 }
 
 .bouton-lettre:hover {
