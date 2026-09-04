@@ -54,8 +54,8 @@ body{
     }
 
     .souvenir-media img {
-        max-width: 200px;
-        max-height: auto;
+        height: 250px;
+        width: auto;
     }
 }
 
@@ -169,14 +169,14 @@ body{
     display: block;
     width: fit-content;
     text-align: center;
-    padding: 15px 20px;
+    padding: 30px 20px;
     border-radius: 30px;
     background-color: #f4dce830;;
     color: rgb(255, 255, 255);
     text-decoration: none;
     transition: 0.3s;
     font-size: 1.2rem;
-    margin: 30px auto;
+    margin: 30px auto 150px;
 }
 
 .bouton-lettre:hover {
