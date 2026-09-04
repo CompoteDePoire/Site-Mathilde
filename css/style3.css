@@ -170,6 +170,7 @@ body {
     }
 
     .lettre {
+        left: 40px;
         max-width: 350px;
     }
 
