@@ -29,20 +29,33 @@ function mettrePointActif() {
         if (distance < distanceLaPlusPetite) {
             distanceLaPlusPetite = distance;
             sectionLaPlusProche = section;
+            }
+        });
+
+        points.forEach((point) => {
+            point.classList.remove("actif");
+        });
+
+        if (sectionLaPlusProche) {
+
+        let idSection = sectionLaPlusProche.id;
+
+        if (sectionLaPlusProche.classList.contains("quotidien")) {
+            idSection = "quotidien";
+        } else if (!idSection) {
+         const titre = sectionLaPlusProche.previousElementSibling;
+
+        if (titre && titre.classList.contains("souvenir-titre")) {
+            idSection = titre.id;
         }
-    });
+        }
 
-    points.forEach((point) => {
-        point.classList.remove("actif");
-    });
-
-    if (sectionLaPlusProche) {
         const pointActif = document.querySelector(
-            `.fil-conducteur a[href="#${sectionLaPlusProche.id}"]`
+            `.fil-conducteur a[href="#${idSection}"]`
         );
 
         if (pointActif) {
-            pointActif.classList.add("actif");
+        pointActif.classList.add("actif");
         }
     }
 }
@@ -66,3 +79,70 @@ if (boutonLettre) {
         }, 600);
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+    const lightboxVideo = document.getElementById("lightbox-video");
+    const fermer = document.querySelector(".lightbox-fermer");
+
+    const photos = document.querySelectorAll(".souvenir-media img");
+
+    photos.forEach((photo) => {
+
+        photo.addEventListener("click", () => {
+
+            lightboxImage.src = photo.src;
+            lightboxImage.alt = photo.alt;
+
+            lightboxImage.style.display = "block";
+            lightboxVideo.style.display = "none";
+
+            lightbox.style.display = "flex";
+        });
+
+    });
+
+    fermer.addEventListener("click", () => {
+
+        lightbox.style.display = "none";
+
+        lightboxImage.src = "";
+        lightboxVideo.src = "";
+
+    });
+
+    lightbox.addEventListener("click", (event) => {
+
+        if (event.target === lightbox) {
+
+            lightbox.style.display = "none";
+
+            lightboxImage.src = "";
+            lightboxVideo.src = "";
+
+        }
+
+    });
+
+    const boutonsVideo = document.querySelectorAll(".video-agrandir");
+
+    boutonsVideo.forEach((bouton) => {
+
+        bouton.addEventListener("click", () => {
+
+            const video = bouton.parentElement.querySelector("iframe");
+
+            lightboxVideo.src = video.src;
+
+            lightboxVideo.style.display = "block";
+            lightboxImage.style.display = "none";
+
+            lightbox.style.display = "flex";
+        });
+
+    });
+
+});
+
